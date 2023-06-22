@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import lightMode from "./../../../../public/light_mode.svg";
 import darkMode from "./../../../../public/dark_mode.svg";
@@ -12,7 +11,7 @@ interface LightmodeInputs {
 
 export default function LightMode({ active, setLightmode }: LightmodeInputs) {
   return (
-    <div className={``} onClick={() => setLightmode(!active)}>
+    <div onClick={() => setLightmode(!active)}>
       <Image src={active ? lightMode : darkMode} alt={""} />
     </div>
   );

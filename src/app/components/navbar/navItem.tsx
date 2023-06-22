@@ -8,10 +8,7 @@ interface navItemInput {
 
 export default function NavItem({ text, href, active }: navItemInput) {
   return (
-    <Link
-      href={href}
-      className={`${active ? "active" : ""} text-slate-950 dark:text-slate-50`}
-    >
+    <Link href={href} className={`${active ? "active" : ""}`}>
       {text}
     </Link>
   );
