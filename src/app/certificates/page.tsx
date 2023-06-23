@@ -33,8 +33,11 @@ export default function Certificates() {
       <p className="text-5xl">Certificates</p>
       <p>Below you can find all of my current official certifications.</p>
       <div className="flex flex-col gap-5">
-        {certificates.map((certificate) => (
-          <div className="border rounded-md flex flex-row gap-10 px-5 py-3">
+        {certificates.map((certificate, index) => (
+          <div
+            className="border rounded-md flex flex-row gap-10 px-5 py-3"
+            key={`certificate-${index}`}
+          >
             <Image
               src={certificate.img || null}
               alt={""}

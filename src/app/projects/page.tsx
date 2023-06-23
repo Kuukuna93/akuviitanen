@@ -46,6 +46,7 @@ export default function Projects() {
             className={`flex gap-5 justify-between ${
               index % 2 === 0 ? "flex-row" : "flex-row-reverse"
             }`}
+            key={`project-${index}`}
           >
             <Image src={project.img} alt={""} width={360} height={280} />
             <div className="flex flex-col gap-3">
