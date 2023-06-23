@@ -4,30 +4,30 @@ import Image from "next/image";
 import { format } from "date-fns";
 import Link from "next/link";
 
+interface Certificate {
+  title: string;
+  url?: string;
+  img?: any;
+  completed: Date;
+  expires?: Date;
+}
+
+const certificates: Certificate[] = [
+  {
+    title: "Graph Developer - Associate",
+    url: "https://www.apollographql.com/tutorials/certifications/d7b7eb6b-2b94-4590-a792-5270aba8e7a1",
+    completed: new Date(2023, 4, 25),
+    img: apolloAssociate,
+  },
+  {
+    title: "Graph Developer - Professional",
+    url: "https://www.apollographql.com/tutorials/certifications/e6fbb8b9-9ff5-468d-8ea0-24ca5aafda8e",
+    completed: new Date(2023, 5, 19),
+    img: apolloProfessional,
+  },
+];
+
 export default function Certificates() {
-  interface Certificate {
-    title: string;
-    url?: string;
-    img?: any;
-    completed: Date;
-    expires?: Date;
-  }
-
-  const certificates: Certificate[] = [
-    {
-      title: "Graph Developer - Associate",
-      url: "https://www.apollographql.com/tutorials/certifications/d7b7eb6b-2b94-4590-a792-5270aba8e7a1",
-      completed: new Date(2023, 4, 25),
-      img: apolloAssociate,
-    },
-    {
-      title: "Graph Developer - Professional",
-      url: "https://www.apollographql.com/tutorials/certifications/e6fbb8b9-9ff5-468d-8ea0-24ca5aafda8e",
-      completed: new Date(2023, 5, 19),
-      img: apolloProfessional,
-    },
-  ];
-
   return (
     <main className="flex min-h-screen flex-col items-center p-12 gap-10">
       <p className="text-5xl">Certificates</p>
