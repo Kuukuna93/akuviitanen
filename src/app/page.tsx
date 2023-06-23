@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-12 gap-10">
+    <main className="flex flex-col items-center p-12 gap-10">
       <p className="text-5xl">Home</p>
       <div className="flex flex-row items-center gap-5 max-w-3xl">
         <Image src={placeholder} alt={""}></Image>

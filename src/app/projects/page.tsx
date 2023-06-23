@@ -33,7 +33,7 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-12 gap-10">
+    <main className="flex flex-col items-center p-12 gap-10">
       <p className="text-5xl">Projects</p>
       <p className="max-w-2xl">
         Most of my projects have been developed directly for clients and as
