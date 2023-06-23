@@ -1,10 +1,9 @@
-"use client";
-
-import { useState } from "react";
 import LightMode from "./components/lightmode/lightmode";
 import Navbar from "./components/navbar/navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { cookies } from "next/dist/client/components/headers";
+import { Theme } from "./types";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,20 +12,24 @@ export const metadata = {
   description: "Personal website of Aku Viitanen",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const [lightMode, setLightmode] = useState(true);
+  const theme = cookies().get("theme");
 
   return (
-    <html lang="en" className={lightMode ? "" : "dark"}>
+    <html lang="en" className={theme?.value}>
       <body
         className={`${inter.className} bg-slate-50 dark:bg-slate-950 text-slate-950 dark:text-slate-50`}
       >
-        <Navbar />
-        <LightMode active={lightMode} setLightmode={setLightmode} />
+        <header className="flex flex-row justify-center">
+          <Navbar />
+          <LightMode
+            theme={theme?.value === "dark" ? Theme.dark : Theme.light}
+          />
+        </header>
         {children}
       </body>
     </html>

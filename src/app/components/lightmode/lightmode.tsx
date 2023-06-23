@@ -3,16 +3,31 @@
 import Image from "next/image";
 import lightMode from "./../../../../public/light_mode.svg";
 import darkMode from "./../../../../public/dark_mode.svg";
+import { useState } from "react";
+import { Theme } from "@/app/types";
 
 interface LightmodeInputs {
-  active: boolean;
-  setLightmode: (active: boolean) => void;
+  theme: Theme;
 }
 
-export default function LightMode({ active, setLightmode }: LightmodeInputs) {
+export default function LightMode({ theme }: LightmodeInputs) {
+  const [_theme, setTheme] = useState<Theme>(theme);
+
+  const toggleTheme = () => {
+    const root = document.getElementsByTagName("html")[0];
+    root.classList.toggle(Theme.dark);
+    if (root.classList.contains(Theme.dark)) {
+      setTheme(Theme.dark);
+      document.cookie = `theme=${Theme.dark}`;
+    } else {
+      setTheme(Theme.light);
+      document.cookie = `theme=${Theme.light}`;
+    }
+  };
+
   return (
-    <div onClick={() => setLightmode(!active)}>
-      <Image src={active ? lightMode : darkMode} alt={""} />
+    <div onClick={() => toggleTheme()} className="ml-auto">
+      <Image src={_theme === Theme.light ? lightMode : darkMode} alt={""} />
     </div>
   );
 }
