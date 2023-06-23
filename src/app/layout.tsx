@@ -22,7 +22,7 @@ export default async function RootLayout({
   return (
     <html lang="en" className={theme?.value}>
       <body
-        className={`${inter.className} bg-slate-50 dark:bg-slate-950 text-slate-950 dark:text-slate-50`}
+        className={`${inter.className} bg-slate-50 dark:bg-slate-950 text-slate-950 dark:text-slate-50 my-10`}
       >
         <header className="flex flex-row justify-center">
           <Navbar />
