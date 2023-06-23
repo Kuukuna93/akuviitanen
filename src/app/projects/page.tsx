@@ -57,6 +57,7 @@ export default function Projects() {
                 <Link
                   className="underline text-slate-400 mr-auto"
                   href={project.url}
+                  target="_blank"
                 >
                   Website
                 </Link>
@@ -65,6 +66,7 @@ export default function Projects() {
                 <Link
                   className="underline text-slate-400 mr-auto"
                   href={project.gitUrl}
+                  target="_blank"
                 >
                   Repository
                 </Link>

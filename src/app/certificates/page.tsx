@@ -55,6 +55,7 @@ export default function Certificates() {
                 <Link
                   href={certificate.url}
                   className={`text-slate-300 py-2 px-4`}
+                  target="_blank"
                 >
                   View Certificate
                 </Link>
