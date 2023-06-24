@@ -110,6 +110,14 @@ export default function About() {
   return (
     <main className="flex flex-col items-center p-12 gap-10">
       <p className="text-5xl">About</p>
+      <div className="flex flex-row gap-10 justify-center">
+        <div className="flex w-52 contentLeft">
+          <p className="break-all">
+            aaabasdbasbghjl,fghlöjkpgfhok,joplfg,kpojkghkfdsabdas
+          </p>
+        </div>
+        <div className="flex w-52 contentRight">b asdgfbsdfsdbfsd</div>
+      </div>
       <VerticalTimeline className="before:bg-black dark:before:bg-white">
         {timelineElements.map((timelineElement, index) => {
           const color: string =
