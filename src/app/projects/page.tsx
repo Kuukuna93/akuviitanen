@@ -1,5 +1,6 @@
 import Link from "next/link";
 import placeholder from "./../../../public/placeholder.svg";
+import website from "./../../../public/website.png";
 import Image from "next/image";
 
 interface Project {
@@ -17,7 +18,7 @@ const projects: Project[] = [
     description:
       "My own portfolio website to demonstrate my past projects and certifications. ",
     gitUrl: "https://github.com/Kuukuna93/akuviitanen",
-    img: placeholder,
+    img: website,
     technologies: [
       "TypeScript",
       "React",
@@ -48,7 +49,13 @@ export default function Projects() {
             }`}
             key={`project-${index}`}
           >
-            <Image src={project.img} alt={""} width={360} height={280} />
+            <Image
+              src={project.img}
+              alt={""}
+              width={360}
+              height={280}
+              className="border border-slate-500"
+            />
             <div className="flex flex-col gap-3">
               <p className="text-3xl">{project.title}</p>
               <p>{project.description}</p>
