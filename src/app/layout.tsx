@@ -8,7 +8,7 @@ import { Theme } from "./types";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "AkuViitanen",
+  title: "Aku Viitanen",
   description: "Personal website of Aku Viitanen",
 };
 

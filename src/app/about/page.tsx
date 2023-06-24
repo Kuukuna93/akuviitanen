@@ -121,17 +121,17 @@ export default function About() {
 
   useEffect(() => {
     const node = document.getElementsByTagName("html")[0];
-    setTheme(node.classList.contains(Theme.dark) ? Theme.dark : Theme.light);
+    setTheme(node.classList.contains(Theme.light) ? Theme.light : Theme.dark);
 
     const mutationObserver = new MutationObserver((mutationlist) => {
       for (const item of mutationlist) {
         if (
           item.attributeName === "class" &&
-          node.classList.contains(Theme.dark)
+          node.classList.contains(Theme.light)
         ) {
-          setTheme(Theme.dark);
-        } else {
           setTheme(Theme.light);
+        } else {
+          setTheme(Theme.dark);
         }
       }
     });
