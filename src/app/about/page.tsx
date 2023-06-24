@@ -137,7 +137,7 @@ export default function About() {
     });
 
     mutationObserver.observe(node, { attributes: true });
-  });
+  }, []);
 
   return (
     <main className="flex flex-col items-center p-12 gap-20">
@@ -168,8 +168,8 @@ export default function About() {
             <br />
             Outside work I spend my time enjoying Atlantas outdoor activities,
             playing video games and enjoying good food. I also used to travel a
-            lot with my wife before pandemic and getting our first dog, and I've
-            been to many countries all over the world.
+            lot with my wife before the pandemic and getting our first dog, and
+            I've been to many countries all over the world.
           </p>
         </div>
         <div className="flex w-1/2 contentRight flex-col border rounded-md p-5 gap-5">

@@ -21,8 +21,8 @@ export default function Home() {
           <p className="break-words text-2xl font-semibold">Welcome!</p>
           <p className="break-words">
             Hi, my name is Aku Viitanen and this is my brand new
-            personal/portfolio/demo page to list and demostrate my professional
-            skills as software developer. Here you can find listings of my
+            personal/portfolio/demo page to list and demonstrate my professional
+            skills as a software developer. Here you can find listings of my
             (public) projects, certificates and a little more about me on both
             professional and personal level.
           </p>

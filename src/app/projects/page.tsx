@@ -37,7 +37,7 @@ export default function Projects() {
       <p className="max-w-2xl">
         Most of my projects have been developed directly for clients and as
         such, I will not be posting about them in detail publicly. I will list
-        my own projects below.
+        my own personal projects below.
       </p>
       <div className="flex flex-col gap-5">
         {projects.map((project, index) => (
