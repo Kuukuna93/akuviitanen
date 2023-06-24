@@ -145,11 +145,11 @@ export default function About() {
       <div className="flex flex-row max-w-6xl gap-32 justify-center">
         <div className="flex w-1/2 contentLeft flex-col gap-5">
           <p className="break-words text-2xl font-semibold">
-            I'm Aku, a Finnish professional keyboard-presser currently living
-            int Atlanta, GA.
+            I&apos;m Aku, a Finnish professional keyboard-presser currently
+            living int Atlanta, GA.
           </p>
           <p className="break-words">
-            Born in 1993, I've always had an interest and aptitude towards
+            Born in 1993, I&apos;ve always had an interest and aptitude towards
             working with computers and technology in general. After high school
             (and finnish military service) I started in Aalto University,
             completing my Bachelors in Information Technology, after which I
@@ -157,19 +157,19 @@ export default function About() {
             Development.
             <br />
             <br />
-            During and after my studies I've worked in various technical roles
-            from full stack web developer to project engineer handling larger
-            software and hardware deliveries. Most of my career thus far has
-            been spent working on client projects, but I would not mind getting
-            my feet wet with product development in future. If you want more
-            details you can check my skill set on the right and my career
+            During and after my studies I&apos;ve worked in various technical
+            roles from full stack web developer to project engineer handling
+            larger software and hardware deliveries. Most of my career thus far
+            has been spent working on client projects, but I would not mind
+            getting my feet wet with product development in future. If you want
+            more details you can check my skill set on the right and my career
             timeline below.
             <br />
             <br />
             Outside work I spend my time enjoying Atlantas outdoor activities,
             playing video games and enjoying good food. I also used to travel a
             lot with my wife before the pandemic and getting our first dog, and
-            I've been to many countries all over the world.
+            I&apos;ve been to many countries all over the world.
           </p>
         </div>
         <div className="flex w-1/2 contentRight flex-col border rounded-md p-5 gap-5">
