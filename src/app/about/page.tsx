@@ -84,6 +84,38 @@ const timelineElements: TimelineElement[] = [
   },
 ];
 
+const skillsProgrammingLanguages: string[] = [
+  "TypeScript",
+  "JavaScript",
+  "Python",
+  "Bash",
+  "Java",
+  "Kotlin",
+  "C#",
+];
+const skillsTechnologies: string[] = [
+  "React",
+  "React Native",
+  "node.js",
+  "Vue.js",
+  "Next.js",
+  "GraphQL",
+  "express.js",
+  "SQL",
+];
+const skillsToolsAndPlatforms: string[] = [
+  "Git",
+  "Vercel",
+  "Google Could Platform",
+  "Apollo Federation",
+  "Heroku",
+  "Auth0",
+  "Stripe",
+  "Salesforce",
+];
+const skillsLanguages: string[] = ["English (Fluent)", "Finnish (Native)"];
+const skillsGeneral: string[] = ["Communication", "Teamwork", "Agile", "Scrum"];
+
 export default function About() {
   const [theme, setTheme] = useState(Theme.dark);
 
@@ -108,16 +140,65 @@ export default function About() {
   });
 
   return (
-    <main className="flex flex-col items-center p-12 gap-10">
+    <main className="flex flex-col items-center p-12 gap-20">
       <p className="text-5xl">About</p>
-      <div className="flex flex-row gap-10 justify-center">
-        <div className="flex w-52 contentLeft">
-          <p className="break-all">
-            aaabasdbasbghjl,fghlöjkpgfhok,joplfg,kpojkghkfdsabdas
+      <div className="flex flex-row max-w-6xl gap-32 justify-center">
+        <div className="flex w-1/2 contentLeft flex-col gap-5">
+          <p className="break-words text-2xl font-semibold">
+            I'm Aku, a Finnish professional keyboard-presser currently living
+            int Atlanta, GA.
+          </p>
+          <p className="break-words">
+            Born in 1993, I've always had an interest and aptitude towards
+            working with computers and technology in general. After high school
+            (and finnish military service) I started in Aalto University,
+            completing my Bachelors in Information Technology, after which I
+            completed my Masters degree in Computer Science, specializing in Web
+            Development.
+            <br />
+            <br />
+            During and after my studies I've worked in various technical roles
+            from full stack web developer to project engineer handling larger
+            software and hardware deliveries. Most of my career thus far has
+            been spent working on client projects, but I would not mind getting
+            my feet wet with product development in future. If you want more
+            details you can check my skill set on the right and my career
+            timeline below.
+            <br />
+            <br />
+            Outside work I spend my time enjoying Atlantas outdoor activities,
+            playing video games and enjoying good food. I also used to travel a
+            lot with my wife before pandemic and getting our first dog, and I've
+            been to many countries all over the world.
           </p>
         </div>
-        <div className="flex w-52 contentRight">b asdgfbsdfsdbfsd</div>
+        <div className="flex w-1/2 contentRight flex-col border rounded-md p-5 gap-5">
+          <p className="text-2xl font-bold">Skills</p>
+          <div className="flex flex-col gap-5">
+            <div>
+              <p className="text-xl font-bold">Programming languages</p>
+              <p>{skillsProgrammingLanguages.join(", ")}</p>
+            </div>
+            <div>
+              <p className="text-xl font-bold">Technologies</p>
+              <p>{skillsTechnologies.join(", ")}</p>
+            </div>
+            <div>
+              <p className="text-xl font-bold">Tools and Platforms</p>
+              <p>{skillsToolsAndPlatforms.join(", ")}</p>
+            </div>
+            <div>
+              <p className="text-xl font-bold">Languages</p>
+              <p>{skillsLanguages.join(", ")}</p>
+            </div>
+            <div>
+              <p className="text-xl font-bold">General</p>
+              <p>{skillsGeneral.join(", ")}</p>
+            </div>
+          </div>
+        </div>
       </div>
+      <p className="text-3xl">Career timeline</p>
       <VerticalTimeline className="before:bg-black dark:before:bg-white">
         {timelineElements.map((timelineElement, index) => {
           const color: string =
