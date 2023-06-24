@@ -29,7 +29,7 @@ const certificates: Certificate[] = [
 
 export default function Certificates() {
   return (
-    <main className="flex flex-col items-center p-12 gap-10">
+    <main className="flex flex-col items-center p-12 gap-20">
       <p className="text-5xl">Certificates</p>
       <p>Below you can find all of my current official certifications.</p>
       <div className="flex flex-col gap-5">
