@@ -20,7 +20,7 @@ export default async function RootLayout({
   const theme = cookies().get("theme");
 
   return (
-    <html lang="en" className={theme?.value}>
+    <html lang="en" className={theme?.value || Theme.dark}>
       <body
         className={`${inter.className} bg-slate-50 dark:bg-slate-950 text-slate-950 dark:text-slate-50 py-10`}
       >
