@@ -35,7 +35,9 @@ export default function Certificates() {
       <div className="flex flex-col gap-5">
         {certificates.map((certificate, index) => (
           <div
-            className="border rounded-md flex flex-row gap-10 px-5 py-3"
+            className={`border rounded-md flex flex-row gap-10 px-5 py-3 ${
+              index % 2 === 0 ? "contentLeft" : "contentRight"
+            }`}
             key={`certificate-${index}`}
           >
             <Image

@@ -16,18 +16,16 @@ const projects: Project[] = [
     title: "This website",
     description:
       "My own portfolio website to demonstrate my past projects and certifications. ",
-    url: "https://akuviitanen.vercel.app/",
     gitUrl: "https://github.com/Kuukuna93/akuviitanen",
     img: placeholder,
-    technologies: ["TypeScript", "React", "NextJS", "Vercel", "TailwindCSS"],
-  },
-  {
-    title: "Placeholder project",
-    description: "This project was added to demonstrate strucutre of this page",
-    url: "a",
-    gitUrl: "a",
-    img: placeholder,
-    technologies: ["placeholder images", "lorem ipsum"],
+    technologies: [
+      "TypeScript",
+      "React",
+      "NextJS",
+      "Vercel",
+      "TailwindCSS",
+      "Jest",
+    ],
   },
 ];
 
@@ -44,7 +42,9 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             className={`flex gap-5 justify-between ${
-              index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+              index % 2 === 0
+                ? "flex-row contentLeft"
+                : "flex-row-reverse contentRight"
             }`}
             key={`project-${index}`}
           >
