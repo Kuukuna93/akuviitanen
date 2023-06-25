@@ -155,7 +155,7 @@ export default function About() {
         <div className="flex md:w-1/2 contentLeft flex-col gap-5">
           <p className="break-words text-2xl font-semibold">
             I&apos;m Aku, a Finnish professional keyboard-presser currently
-            living ing Atlanta, GA.
+            living in Atlanta, GA.
           </p>
           <p className="break-words">
             Born in 1993, I&apos;ve always had an interest and aptitude towards
