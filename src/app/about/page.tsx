@@ -34,7 +34,15 @@ const timelineElements: TimelineElement[] = [
     description:
       "Worked on client projects as a full stack web developer. Projects varied from membership platforms to e-commerce solutions.",
     type: TimelineElementType.work,
-    keywords: ["React", "TypeScript", "GraphQL", "SQL", "node.js", "GCP"],
+    keywords: [
+      "React",
+      "TypeScript",
+      "Jest",
+      "GraphQL",
+      "SQL",
+      "node.js",
+      "GCP",
+    ],
   },
   {
     title: "Project Engineer",
@@ -96,6 +104,7 @@ const skillsProgrammingLanguages: string[] = [
 const skillsTechnologies: string[] = [
   "React",
   "React Native",
+  "Jest",
   "node.js",
   "Vue.js",
   "Next.js",
