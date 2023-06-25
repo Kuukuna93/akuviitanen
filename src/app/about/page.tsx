@@ -30,7 +30,7 @@ const timelineElements: TimelineElement[] = [
     title: "Software Developer",
     subtitle: "Vincit USA",
     location: "California - Remote",
-    date: "2022 - current",
+    date: "2022 - present",
     description:
       "Worked on client projects as a full stack web developer. Projects varied from membership platforms to e-commerce solutions.",
     type: TimelineElementType.work,
@@ -146,7 +146,7 @@ export default function About() {
         <div className="flex md:w-1/2 contentLeft flex-col gap-5">
           <p className="break-words text-2xl font-semibold">
             I&apos;m Aku, a Finnish professional keyboard-presser currently
-            living int Atlanta, GA.
+            living ing Atlanta, GA.
           </p>
           <p className="break-words">
             Born in 1993, I&apos;ve always had an interest and aptitude towards
