@@ -29,13 +29,13 @@ const certificates: Certificate[] = [
 
 export default function Certificates() {
   return (
-    <main className="flex flex-col items-center p-12 gap-20">
+    <main className="flex flex-col items-center p-12 gap-10 md:gap-20">
       <p className="text-5xl">Certificates</p>
       <p>Below you can find all of my current official certifications.</p>
       <div className="flex flex-col gap-5">
         {certificates.map((certificate, index) => (
           <div
-            className={`border rounded-md flex flex-row gap-10 px-5 py-3 ${
+            className={`border rounded-md flex flex-col items-center gap-2 sm:flex-row sm:gap-4 md:gap-10 px-2 sm:px-3 md:px-5 py-3 ${
               index % 2 === 0 ? "contentLeft" : "contentRight"
             }`}
             key={`certificate-${index}`}
@@ -53,10 +53,10 @@ export default function Certificates() {
               </span>
             </div>
             {certificate.url ? (
-              <div className="rounded-md bg-indigo-600 p-3 self-center ml-auto">
+              <div className="rounded-md bg-indigo-600 p-3 self-center sm:ml-auto">
                 <Link
                   href={certificate.url}
-                  className={`text-slate-300 py-2 px-4`}
+                  className={`text-slate-300 py-2 px-1 sm:px-2 md:px-4`}
                   target="_blank"
                 >
                   View Certificate

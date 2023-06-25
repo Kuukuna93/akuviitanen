@@ -26,10 +26,10 @@ export default async function RootLayout({
       >
         <header className="flex flex-row justify-center">
           <Navbar />
-          <LightMode
-            theme={theme?.value === "light" ? Theme.light : Theme.dark}
-          />
         </header>
+        {/*<LightMode
+          theme={theme?.value === "light" ? Theme.light : Theme.dark}
+  />*/}
         {children}
       </body>
     </html>

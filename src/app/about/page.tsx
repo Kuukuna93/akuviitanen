@@ -30,7 +30,7 @@ const timelineElements: TimelineElement[] = [
     title: "Software Developer",
     subtitle: "Vincit USA",
     location: "California - Remote",
-    date: "2022 - current",
+    date: "2022 - present",
     description:
       "Worked on client projects as a full stack web developer. Projects varied from membership platforms to e-commerce solutions.",
     type: TimelineElementType.work,
@@ -140,13 +140,13 @@ export default function About() {
   }, []);
 
   return (
-    <main className="flex flex-col items-center p-12 gap-20">
+    <main className="flex flex-col items-center p-12 gap-10 md:gap-20">
       <p className="text-5xl">About</p>
-      <div className="flex flex-row max-w-6xl gap-32 justify-center">
-        <div className="flex w-1/2 contentLeft flex-col gap-5">
+      <div className="flex flex-col md:flex-row max-w-6xl gap-10 md:gap-32 justify-center">
+        <div className="flex md:w-1/2 contentLeft flex-col gap-5">
           <p className="break-words text-2xl font-semibold">
             I&apos;m Aku, a Finnish professional keyboard-presser currently
-            living int Atlanta, GA.
+            living ing Atlanta, GA.
           </p>
           <p className="break-words">
             Born in 1993, I&apos;ve always had an interest and aptitude towards
@@ -172,7 +172,7 @@ export default function About() {
             I&apos;ve been to many countries all over the world.
           </p>
         </div>
-        <div className="flex w-1/2 contentRight flex-col border rounded-md p-5 gap-5">
+        <div className="flex md:w-1/2 contentRight flex-col border rounded-md p-5 gap-5 md:mb-auto">
           <p className="text-2xl font-bold">Skills</p>
           <div className="flex flex-col gap-5">
             <div>

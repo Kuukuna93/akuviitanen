@@ -32,29 +32,27 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <main className="flex flex-col items-center p-12 gap-20">
+    <main className="flex flex-col items-center p-12 gap-10 md:gap-20">
       <p className="text-5xl">Projects</p>
       <p className="max-w-2xl">
         Most of my projects have been developed directly for clients and as
         such, I will not be posting about them in detail publicly. I will list
         my own personal projects below.
       </p>
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-10">
         {projects.map((project, index) => (
           <div
-            className={`flex gap-5 justify-between ${
+            className={`flex gap-5 items-center sm:items-start justify-between flex-col-reverse ${
               index % 2 === 0
-                ? "flex-row contentLeft"
-                : "flex-row-reverse contentRight"
+                ? "sm:flex-row contentLeft"
+                : "sm:flex-row-reverse contentRight"
             }`}
             key={`project-${index}`}
           >
             <Image
               src={project.img}
               alt={""}
-              width={360}
-              height={280}
-              className="border border-slate-500"
+              className="border border-slate-500 w-96 h-72 sm:w-72 sm:h-48 md:w-96 md:h-72"
             />
             <div className="flex flex-col gap-3">
               <p className="text-3xl">{project.title}</p>

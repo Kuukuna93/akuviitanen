@@ -26,7 +26,10 @@ export default function LightMode({ theme }: LightmodeInputs) {
   };
 
   return (
-    <div onClick={() => toggleTheme()} className="flex absolute right-5 top-5">
+    <div
+      onClick={() => toggleTheme()}
+      className="absolute right-5 bottom-5 z-10 md:top-5"
+    >
       <Image src={_theme === Theme.light ? lightMode : darkMode} alt={""} />
     </div>
   );
