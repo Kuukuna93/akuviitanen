@@ -30,7 +30,7 @@ const timelineElements: TimelineElement[] = [
     title: "Software Developer",
     subtitle: "Vincit USA",
     location: "California - Remote",
-    date: "2022 - present",
+    date: "Mar 2022 - present",
     description:
       "Worked on client projects as a full stack web developer. Projects varied from membership platforms to e-commerce solutions.",
     type: TimelineElementType.work,
@@ -48,7 +48,7 @@ const timelineElements: TimelineElement[] = [
     title: "Project Engineer",
     subtitle: "Prosys OPC Ltd",
     location: "Helsinki, Finland",
-    date: "2020 - 2022",
+    date: "Aug 2020 - Feb 2022",
     description:
       "Led a small team in an embedded technology delivery consisting of both custom hardware and software solutions. Lead developer on the associated native Android app.",
     type: TimelineElementType.work,
@@ -67,17 +67,17 @@ const timelineElements: TimelineElement[] = [
     title: "Sales Engineer",
     subtitle: "Prosys OPC Ltd",
     location: "Helsinki, Finland",
-    date: "2019 - 2020",
+    date: "Feb 2019 - Jul 2020",
     description:
       "Development of internal marketing tools and technology infrastructure. Engineering support for business growth operations.",
     type: TimelineElementType.work,
     keywords: ["Azure AD", "Microsoft Dynamics", "Linux"],
   },
   {
-    title: "Full Stack Developer",
+    title: "Full-stack Developer",
     subtitle: "Prosys OPC Ltd",
     location: "Helsinki, Finland",
-    date: "2016 - 2019",
+    date: "Dec 2016 - Jan 2019",
     description: "Worked in customer projects ",
     type: TimelineElementType.work,
     keywords: [
