@@ -27,10 +27,24 @@ interface TimelineElement {
 
 const timelineElements: TimelineElement[] = [
   {
+    title: "Software Engineer II",
+    subtitle: "Microsoft",
+    location: "Atlanta - USA",
+    date: "2024 - present",
+    description:
+      "Working on SRE to deliver infrastructure improvements for application and update deployment.",
+    type: TimelineElementType.work,
+    keywords: [
+      "C#",
+      ".NET",
+      "Azure",
+    ],
+  },
+  {
     title: "Software Developer",
     subtitle: "Vincit USA",
     location: "California - Remote",
-    date: "2022 - present",
+    date: "2022 - 2024",
     description:
       "Worked on client projects as a full stack web developer. Projects varied from membership platforms to e-commerce solutions.",
     type: TimelineElementType.work,
